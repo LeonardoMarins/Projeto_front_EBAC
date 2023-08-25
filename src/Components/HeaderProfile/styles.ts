@@ -40,7 +40,7 @@ export const Banner = styled.img`
 
 export const ContainerBanner = styled.div`
   position: relative;
-  max-width: 1366px;
+  width: 100vw;
   margin: 0 auto;
 `
 

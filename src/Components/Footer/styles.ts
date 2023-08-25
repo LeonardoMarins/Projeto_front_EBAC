@@ -11,10 +11,9 @@ export const Paragrafo = styled.p`
   position: absolute;
   bottom: 20px;
   color: #e66767;
-  font-size: 10px;
+  font-size: 7px;
   text-align: center;
   font-style: normal;
-  width: 552px;
   height: 86px;
   font-weight: 900;
   line-height: normal;

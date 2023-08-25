@@ -7,7 +7,6 @@ export const CardContainer = styled.div<
 >`
   width: ${(props) => (props.width === 'big' ? 472 + 'px' : 320 + 'px')};
   border: 1px solid #e66767;
-
   .paragrafo {
     margin: 24px 8px;
   }
@@ -19,7 +18,7 @@ export const ContainerText = styled.div`
   width: 100%;
 
   h3 {
-    margin-left: 8px;
+    margin-left: 0.4em;
     color: #e66767;
   }
 `

@@ -3,6 +3,7 @@ import fundo from '../../img/FundoHeader.png'
 
 export const Container = styled.div`
   background-image: url(${fundo});
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,9 +22,8 @@ export const Text = styled.p`
   text-align: center;
   padding-top: 80px;
   font-family: Roboto;
-  font-size: 36.829px;
+  font-size: 30.829px;
   font-style: normal;
-  width: 552px;
   height: 86px;
   font-weight: 900;
   line-height: normal;
