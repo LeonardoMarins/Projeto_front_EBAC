@@ -10,7 +10,7 @@ export type Props = {
 
 const Header = ({ images, text }: Props) => {
   return (
-    <Container>
+    <Container className="container">
       <ImagemLogo src={logo} alt="logo" />
       <Text>{text}</Text>
       {images &&

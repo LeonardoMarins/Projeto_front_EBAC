@@ -20,7 +20,7 @@ const Footer = ({ text }: FooterProps) => {
     <ContainerF>
       <ImagemLogo src={logo} alt="logo" />
       <Paragrafo>{text}</Paragrafo>
-      <div>
+      <div className="conatiner">
         <ul>
           <li>
             <a href={'#'} target="_blank" rel="noopener noreferrer">

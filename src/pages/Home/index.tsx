@@ -7,7 +7,7 @@ import { Container } from './styles'
 const Home = () => {
   return (
     <>
-      <Container>
+      <Container className="container">
         <GlobalStyle />
         <Header text="Viva experiências gastronômicas no conforto da sua casa" />
         <Section />

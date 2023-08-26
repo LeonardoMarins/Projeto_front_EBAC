@@ -10,7 +10,7 @@ const Profile = () => {
     <>
       <GlobalStyle />
       <HeaderProfile />
-      <CardContainerI>
+      <CardContainerI className="container">
         <Card
           colorButton="#E66767"
           background="#E66767"

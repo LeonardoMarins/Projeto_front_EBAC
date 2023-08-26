@@ -23,10 +23,12 @@ export const ContainerF = styled(Container)`
   margin-top: 118px;
   background-image: none;
   background-color: #ffebd9;
+  max-width: 100vw;
+  width: 100%;
   height: 360px;
+  position: relative;
 
   li {
     display: inline-block;
-    margin-right: 0px;
   }
 `

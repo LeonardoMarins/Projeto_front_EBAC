@@ -6,6 +6,8 @@ export const ContainerProfile = styled(Container)`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 100vw;
+  width: 100%;
   height: 160px;
   padding: 0 40px;
 
@@ -40,7 +42,7 @@ export const Banner = styled.img`
 
 export const ContainerBanner = styled.div`
   position: relative;
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
 `
 

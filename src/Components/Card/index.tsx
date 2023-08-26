@@ -31,7 +31,10 @@ const Card = ({
   const buttonText = color === '#FFEBD9' ? 'Adicionar carrinho' : 'Saiba Mais'
   return (
     <>
-      <CardContainer style={{ background: estilos.background, width: width }}>
+      <CardContainer
+        className="container"
+        style={{ background: estilos.background, width: width }}
+      >
         <img src={imagem} alt="imagem sushi" />
         <ContainerText>
           <h3 style={{ color: estilos.color }}>{title}</h3>

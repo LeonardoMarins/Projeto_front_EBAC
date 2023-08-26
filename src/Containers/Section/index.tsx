@@ -5,7 +5,7 @@ import sushi from '../../img/CardSushi.png'
 const Section = () => {
   return (
     <>
-      <Container>
+      <Container className="container">
         <Card
           star="4.9"
           color="red"
