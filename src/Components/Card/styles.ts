@@ -3,12 +3,17 @@ import { styled } from 'styled-components'
 import { Props } from '.'
 
 export const CardContainer = styled.div<
-  Omit<Props, 'title' | 'subtitle' | 'imagem'>
+  Omit<Props, 'imagem' | 'id' | 'tipo' | 'titulo' | 'capa' | 'tipo'>
 >`
   width: ${(props) => (props.width === 'big' ? 472 + 'px' : 320 + 'px')};
   border: 1px solid #e66767;
   .paragrafo {
     margin: 24px 8px;
+  }
+
+  img {
+    width: 472px;
+    height: 272px;
   }
 `
 

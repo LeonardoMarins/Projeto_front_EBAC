@@ -2,24 +2,27 @@ import Button from '../Button'
 import { CardContainer, ContainerText, Links } from './styles'
 
 export type Props = {
-  title: string
-  subtitle: string
-  imagem: string
+  id: number
+  capa: string
+  titulo: string
   background?: string
   color?: string
   colorButton?: string
   width?: 'big' | 'small'
-  star?: string
+  avaliacao?: number
+  tipo: string
+  imagem: string
 }
 
 const Card = ({
-  title,
-  subtitle,
-  imagem,
   background,
   color,
   colorButton,
-  star
+  id,
+  capa,
+  tipo,
+  titulo,
+  avaliacao
 }: Props) => {
   const estilos = {
     background: background,
@@ -29,22 +32,23 @@ const Card = ({
 
   const width = color === '#FFEBD9' ? '320px' : '472px'
   const buttonText = color === '#FFEBD9' ? 'Adicionar carrinho' : 'Saiba Mais'
+
   return (
     <>
       <CardContainer
         className="container"
         style={{ background: estilos.background, width: width }}
       >
-        <img src={imagem} alt="imagem sushi" />
+        <img src={capa} alt="" />
         <ContainerText>
-          <h3 style={{ color: estilos.color }}>{title}</h3>
-          <p>{star && <span>{star}&#11088;</span>}</p>
+          <h3 style={{ color: estilos.color }}>{titulo}</h3>
+          <p>{avaliacao && <span> {avaliacao}&#11088;</span>}</p>
         </ContainerText>
         <p style={{ color: estilos.color }} className="paragrafo">
-          {subtitle}
+          {tipo}
         </p>
         <Button color={color} fullWidth={color === '#FFEBD9'}>
-          <Links style={{ color: estilos.colorButton }} to={'/profile'}>
+          <Links style={{ color: estilos.colorButton }} to={`/profile/${id}`}>
             {buttonText}
           </Links>
         </Button>

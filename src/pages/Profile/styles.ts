@@ -1,7 +1,6 @@
 import { styled } from 'styled-components'
-import { CardContainer } from '../../Components/Card/styles'
 
-export const CardContainerI = styled(CardContainer)`
+export const CardContainerI = styled.div`
   margin-left: 10%;
   margin-top: 56px;
   display: grid;

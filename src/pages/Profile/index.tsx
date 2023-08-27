@@ -1,68 +1,35 @@
-import Card from '../../Components/Card'
-import Footer from '../../Components/Footer'
+import { useEffect, useState } from 'react'
 import HeaderProfile from '../../Components/HeaderProfile'
+import Footer from '../../Components/Footer'
+import CardProfile from '../../Components/CardProfile'
 import { GlobalStyle } from '../../styles'
-import pizza from '../../img/pizza.png'
+import { Comidas } from '../Home'
 import { CardContainerI } from './styles'
 
 const Profile = () => {
+  const [restaurantData, setRestaurantData] = useState<Comidas>()
+
+  useEffect(() => {
+    fetch(`https://fake-api-tau.vercel.app/api/efood/restaurantes`)
+      .then((res) => res.json())
+      .then((res) => setRestaurantData(res))
+      .catch((error) => console.error('Error fetching data:', error))
+  }, [])
+
+  if (!restaurantData) {
+    return <h3>Carregando...</h3>
+  }
+
   return (
     <>
       <GlobalStyle />
       <HeaderProfile />
-      <CardContainerI className="container">
-        <Card
-          colorButton="#E66767"
-          background="#E66767"
-          color="#FFEBD9"
-          imagem={pizza}
-          subtitle="teste1"
-          title="teste2"
-        />
-        <Card
-          colorButton="#E66767"
-          background="#E66767"
-          color="#FFEBD9"
-          imagem={pizza}
-          subtitle="teste1"
-          title="teste2"
-        />
-        <Card
-          colorButton="#E66767"
-          background="#E66767"
-          color="#FFEBD9"
-          imagem={pizza}
-          subtitle="teste1"
-          title="teste2"
-        />
-        <Card
-          colorButton="#E66767"
-          background="#E66767"
-          color="#FFEBD9"
-          imagem={pizza}
-          subtitle="teste1"
-          title="teste2"
-        />
-        <Card
-          colorButton="#E66767"
-          background="#E66767"
-          color="#FFEBD9"
-          imagem={pizza}
-          subtitle="teste1"
-          title="teste2"
-        />
-        <Card
-          colorButton="#E66767"
-          background="#E66767"
-          color="#FFEBD9"
-          imagem={pizza}
-          subtitle="teste1"
-          title="teste2"
-        />
+      <CardContainerI>
+        <CardProfile restaurant={restaurantData} />
       </CardContainerI>
       <Footer
         text={
-          'A efood é uma plataforma para divulgação de estabelecimentos, a responsabilidade pela entrega, qualidade dos produtos é toda do estabelecimento contratado. '
+          'A efood é uma plataforma para divulgação de estabelecimentos, a responsabilidade pela entrega, qualidade dos produtos é toda do estabelecimento contratado.'
         }
       />
     </>
