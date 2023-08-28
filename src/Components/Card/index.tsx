@@ -1,3 +1,4 @@
+import { To } from 'react-router-dom'
 import Button from '../Button'
 import { CardContainer, ContainerText, Links } from './styles'
 
@@ -32,6 +33,7 @@ const Card = ({
 
   const width = color === '#FFEBD9' ? '320px' : '472px'
   const buttonText = color === '#FFEBD9' ? 'Adicionar carrinho' : 'Saiba Mais'
+  const button = color === '#FFEBD9' ? '' : `/profile/${id}`
 
   return (
     <>
@@ -48,7 +50,7 @@ const Card = ({
           {tipo}
         </p>
         <Button color={color} fullWidth={color === '#FFEBD9'}>
-          <Links style={{ color: estilos.colorButton }} to={`/profile/${id}`}>
+          <Links style={{ color: estilos.colorButton }} to={button}>
             {buttonText}
           </Links>
         </Button>

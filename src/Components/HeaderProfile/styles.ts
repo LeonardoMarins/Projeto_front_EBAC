@@ -1,6 +1,7 @@
 import { styled } from 'styled-components'
 import { Container } from '../Header/styles'
 import fundo from '../../img/image 2.png'
+import { Link } from 'react-router-dom'
 
 export const ContainerProfile = styled(Container)`
   display: flex;
@@ -31,6 +32,16 @@ export const ContainerProfile = styled(Container)`
     }
   }
 `
+export const ImagemLogo = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    padding: 0;
+    margin-left: 20px; /* Ajuste o valor conforme necessário */
+  }
+`
 
 export const Banner = styled.img`
   max-width: 100%; /* Adicione esta linha para limitar a largura da imagem */
@@ -44,6 +55,14 @@ export const ContainerBanner = styled.div`
   position: relative;
   width: 100%;
   margin: 0 auto;
+
+  img {
+    width: 100vw;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 `
 
 export const BannerOverlay = styled.div`
@@ -61,6 +80,7 @@ export const TextContainer = styled.div`
   left: 5%; /* Ajuste horizontalmente conforme necessário */
   color: #ffffff;
   font-size: 2vw; /* Usando vw para o tamanho da fonte */
+  width: 90vw;
   font-weight: 100;
   line-height: normal;
 `
@@ -72,5 +92,5 @@ export const Subtitle = styled.p`
   top: 400%; /* Ajuste verticalmente conforme necessário */
   left: 5%; /* Ajuste horizontalmente conforme necessário */
   color: #ffffff;
-  white-space: nowrap;
+  white-space: pre-wrap;
 `

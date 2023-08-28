@@ -11,7 +11,9 @@ export type Props = {
 const Header = ({ images, text }: Props) => {
   return (
     <Container className="container">
-      <ImagemLogo src={logo} alt="logo" />
+      <ImagemLogo to={'/'}>
+        <img src={logo} alt="logo" />
+      </ImagemLogo>
       <Text>{text}</Text>
       {images &&
         images.map((image, index) => (

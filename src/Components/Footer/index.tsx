@@ -18,7 +18,9 @@ type FooterProps = {
 const Footer = ({ text }: FooterProps) => {
   return (
     <ContainerF>
-      <ImagemLogo src={logo} alt="logo" />
+      <ImagemLogo to={'/'}>
+        <img src={logo} alt="logo" />
+      </ImagemLogo>
       <Paragrafo>{text}</Paragrafo>
       <div className="conatiner">
         <ul>

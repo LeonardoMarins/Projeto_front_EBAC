@@ -4,11 +4,11 @@ export const CardContainerI = styled.div`
   margin-left: 10%;
   margin-top: 56px;
   display: grid;
-  gap: 24px;
+  gap: 16px;
   grid-template-columns: 1fr 1fr 1fr;
   img {
     width: 320px;
-    border-radius: 10px;
+    border-radius: 20px;
   }
 
   @media (max-width: 1260px) {
@@ -17,6 +17,6 @@ export const CardContainerI = styled.div`
 
   @media (max-width: 818px) {
     grid-template-columns: 1fr;
-    margin-left: 4.5em;
+    margin-right: 2.4em;
   }
 `

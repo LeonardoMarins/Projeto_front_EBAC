@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import fundo from '../../img/FundoHeader.png'
+import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
   background-image: url(${fundo});
@@ -11,7 +12,7 @@ export const Container = styled.div`
   position: relative;
 `
 
-export const ImagemLogo = styled.img`
+export const ImagemLogo = styled(Link)`
   padding-bottom: 200px;
   position: absolute;
   padding-right: 20px;

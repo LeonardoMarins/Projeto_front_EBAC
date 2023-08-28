@@ -12,6 +12,10 @@ export const Container = styled.div`
   @media (max-width: 1220px) {
     grid-template-columns: 1fr 1fr;
   }
+
+  @media (max-width: 798px) {
+    grid-template-columns: 1fr;
+  }
   .containerProfile {
     max-width: 320px;
   }
