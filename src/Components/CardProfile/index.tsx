@@ -37,7 +37,8 @@ const CardProfile = ({ restaurant }: Props) => {
           titulo={item.nome}
           capa={item.foto}
           tipo={item.descricao}
-          avaliacao={item.preco}
+          preco={item.preco}
+          porcao={item.porcao}
         />
       ))}
     </Container>

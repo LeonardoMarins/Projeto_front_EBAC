@@ -16,6 +16,8 @@ export type Props = {
   avaliacao?: number
   tipo?: string
   imagem?: string
+  preco?: number
+  porcao?: string
   backgroundButton?: string
 }
 
@@ -29,6 +31,8 @@ const Card = ({
   titulo,
   avaliacao,
   imagem,
+  preco,
+  porcao,
   backgroundButton
 }: Props) => {
   const estilos = {
@@ -39,7 +43,7 @@ const Card = ({
   }
 
   const width = color === '#FFEBD9' ? '320px' : '472px'
-  const buttonText = color === '#FFEBD9' ? 'Adicionar carrinho' : 'Saiba Mais'
+  const buttonText = color === '#FFEBD9' ? 'Mais Detalhes' : 'Saiba Mais'
 
   const [verifica, setVerifica] = useState(false)
   const [comida, setComida] = useState<Comidas>()
@@ -101,8 +105,15 @@ const Card = ({
                 nome={titulo}
                 descricao={tipo}
                 imagem={imagem}
+                preco={preco}
+                porcao={porcao}
               >
-                <img src={close} alt="fechar" onClick={closeModel} />
+                <img
+                  style={{ width: 24, height: 24 }}
+                  src={close}
+                  alt="fechar"
+                  onClick={closeModel}
+                />
               </Modal>
             )}
           </>

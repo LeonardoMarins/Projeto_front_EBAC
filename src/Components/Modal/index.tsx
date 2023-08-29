@@ -7,9 +7,19 @@ export type Props = {
   nome?: string
   descricao?: string
   imagem?: string
+  preco?: number
+  porcao?: string
 }
 
-const Modal = ({ isVisible, children, nome, descricao, imagem }: Props) => {
+const Modal = ({
+  isVisible,
+  children,
+  nome,
+  descricao,
+  imagem,
+  preco,
+  porcao
+}: Props) => {
   return (
     <ModalContainer>
       {isVisible && (
@@ -22,7 +32,11 @@ const Modal = ({ isVisible, children, nome, descricao, imagem }: Props) => {
               <h2>{nome}</h2>
               <div>{children}</div>
               <img className="image-logo" src={imagem} alt="" />
-              <p>{descricao}</p>
+              <p className="description">{descricao}</p>
+              <button type="button" className="preco">
+                Adicionar ao carrinho - {preco}
+              </button>
+              <p className="porcao">{porcao}</p>
             </div>
           </div>
         </>

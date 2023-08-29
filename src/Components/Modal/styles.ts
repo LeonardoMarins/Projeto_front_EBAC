@@ -2,7 +2,6 @@ import { styled } from 'styled-components'
 
 export const ModalContainer = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -22,7 +21,6 @@ export const ModalContainer = styled.div`
 
     width: 80%;
     margin-left: 8em;
-    max-height: 100vh;
     height: 344px;
     object-fit: cover;
     z-index: 1;
@@ -36,15 +34,34 @@ export const ModalContainer = styled.div`
       border-radius: 0px;
     }
 
-    p {
+    .description {
       position: absolute;
       left: 340px;
-      top: 40%;
+      top: 26%;
+    }
+
+    .preco {
+      position: absolute;
+      left: 340px;
+      top: 80%;
+      cursor: pointer;
+    }
+
+    .porcao {
+      position: absolute;
+      left: 340px;
+      top: 70%;
     }
 
     h2 {
       margin-left: 14em;
       margin-top: 1.2em;
+    }
+
+    button {
+      padding: 10px;
+      color: #e66767;
+      background-color: #ffebd9;
     }
   }
 
@@ -64,8 +81,43 @@ export const ModalContainer = styled.div`
     top: 100px;
     left: 0;
     width: 100%;
-    max-height: 100vh;
     object-fit: cover;
     z-index: 1;
+  }
+
+  @media (max-width: 818px) {
+    .container {
+      margin-left: 4em;
+      height: 400px;
+    }
+
+    .porcao {
+      top: 74%;
+    }
+  }
+
+  @media (max-width: 740px) {
+    .container {
+      text-align: center;
+      margin-left: 2em;
+      .image-logo {
+        display: none;
+      }
+      .description,
+      .preco,
+      .porcao {
+        left: 0;
+      }
+      h2 {
+        margin-left: 30%;
+      }
+      .porcao {
+        margin-left: 38%;
+      }
+
+      button {
+        margin-left: 30%;
+      }
+    }
   }
 `
