@@ -28,6 +28,7 @@ const CardProfile = ({ restaurant }: Props) => {
       {restaurantData.cardapio?.map((item) => (
         <Card
           color="#FFEBD9"
+          width="small"
           colorButton="#E66767"
           background="#E66767"
           key={item.id}

@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import { Props } from '../../Components/Card'
 
 export const CardContainerI = styled.div`
   margin-left: 10%;
@@ -8,7 +9,6 @@ export const CardContainerI = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   img {
     width: 320px;
-    border-radius: 20px;
   }
 
   @media (max-width: 1260px) {

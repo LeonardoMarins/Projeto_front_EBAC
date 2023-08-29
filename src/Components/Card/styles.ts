@@ -3,17 +3,32 @@ import { styled } from 'styled-components'
 import { Props } from '.'
 
 export const CardContainer = styled.div<
-  Omit<Props, 'imagem' | 'id' | 'tipo' | 'titulo' | 'capa' | 'tipo'>
+  Omit<Props, 'imagem' | 'id' | 'tipo' | 'titulo' | 'capa' | 'tipo' | 'comida'>
 >`
   width: ${(props) => (props.width === 'big' ? 472 + 'px' : 320 + 'px')};
   border: 1px solid #e66767;
+  height: 354px;
   .paragrafo {
-    margin: 24px 8px;
+    margin-left: 0.6em;
+    margin-top: 0.6em;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 80px;
+  }
+
+  h3 {
+    margin-left: 0.6em;
+    margin-top: 0.6em;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px;
   }
 
   img {
     width: 472px;
-    height: 272px;
+    height: 167px;
   }
 `
 

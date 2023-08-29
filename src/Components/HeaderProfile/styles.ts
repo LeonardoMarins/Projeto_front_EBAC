@@ -83,14 +83,27 @@ export const TextContainer = styled.div`
   width: 90vw;
   font-weight: 100;
   line-height: normal;
+
+  h2 {
+    color: #ccc; /* Define a cor cinza */
+    position: absolute;
+    top: 10%; /* Ajuste verticalmente conforme necessário */
+    left: 6%; /* Ajuste horizontalmente conforme necessário */
+    font-size: 32px; /* Usando vw para o tamanho da fonte */
+    font-weight: 100;
+    line-height: normal;
+    z-index: 1; /* Garante que o texto esteja atrás da sobreposição */
+  }
 `
 
 export const Subtitle = styled.p`
-  font-size: 2vw; /* Usando vw para o tamanho da fonte */
-  font-weight: 900;
   position: absolute;
-  top: 400%; /* Ajuste verticalmente conforme necessário */
-  left: 5%; /* Ajuste horizontalmente conforme necessário */
-  color: #ffffff;
-  white-space: pre-wrap;
+  top: 160px;
+  left: 70px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1.2em;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
 `

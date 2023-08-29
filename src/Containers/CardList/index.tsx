@@ -12,12 +12,16 @@ const CardList = ({ comida }: Props) => {
       <Container className="container">
         {comida.map((dado) => (
           <Card
+            color="red"
+            width="big"
+            colorButton="#FFEBD9"
+            background="#FFF"
             key={dado.id}
             id={dado.id}
             imagem={dado.capa}
             titulo={dado.titulo}
             capa={dado.capa}
-            tipo={dado.tipo}
+            tipo={dado.descricao}
             avaliacao={dado.avaliacao}
           />
         ))}
