@@ -29,6 +29,7 @@ const CardProfile = ({ restaurant }: Props) => {
         <Card
           color="#FFEBD9"
           width="small"
+          height="small"
           colorButton="#E66767"
           background="#E66767"
           key={item.id}

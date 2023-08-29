@@ -7,7 +7,7 @@ export const CardContainer = styled.div<
 >`
   width: ${(props) => (props.width === 'big' ? 472 + 'px' : 320 + 'px')};
   border: 1px solid #e66767;
-  height: 354px;
+  height: ${(props) => (props.height === 'big' ? 382 + 'px' : 348 + 'px')};
   .paragrafo {
     margin-left: 0.6em;
     margin-top: 0.6em;
@@ -27,8 +27,8 @@ export const CardContainer = styled.div<
   }
 
   img {
-    width: 472px;
-    height: 167px;
+    width: ${(props) => (props.width === 'big' ? '472px' : '320px')};
+    height: ${(props) => (props.width === 'big' ? '200px' : '167px')};
   }
 `
 

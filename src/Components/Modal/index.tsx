@@ -1,5 +1,4 @@
 import { ModalContainer } from './styles'
-import image from '../../img/pizza.png'
 
 export type Props = {
   isVisible: boolean
@@ -34,9 +33,9 @@ const Modal = ({
               <img className="image-logo" src={imagem} alt="" />
               <p className="description">{descricao}</p>
               <button type="button" className="preco">
-                Adicionar ao carrinho - {preco}
+                Adicionar ao carrinho - R${preco}
               </button>
-              <p className="porcao">{porcao}</p>
+              <p className="porcao">serve - {porcao}</p>
             </div>
           </div>
         </>

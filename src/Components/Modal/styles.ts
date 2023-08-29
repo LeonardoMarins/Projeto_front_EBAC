@@ -38,6 +38,7 @@ export const ModalContainer = styled.div`
       position: absolute;
       left: 340px;
       top: 26%;
+      color: #ffebd9;
     }
 
     .preco {
@@ -51,17 +52,20 @@ export const ModalContainer = styled.div`
       position: absolute;
       left: 340px;
       top: 70%;
+      color: #ffebd9;
     }
 
     h2 {
       margin-left: 14em;
       margin-top: 1.2em;
+      color: #ffebd9;
     }
 
     button {
-      padding: 10px;
+      padding: 4px 7px;
       color: #e66767;
       background-color: #ffebd9;
+      border: none;
     }
   }
 
@@ -112,11 +116,11 @@ export const ModalContainer = styled.div`
         margin-left: 30%;
       }
       .porcao {
-        margin-left: 38%;
+        margin-left: 30%;
       }
 
       button {
-        margin-left: 30%;
+        margin-left: 26%;
       }
     }
   }

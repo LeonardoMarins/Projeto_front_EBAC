@@ -6,7 +6,7 @@ export const StyledButton = styled.button<Props>`
   background-color: ${(props) =>
     props.color === 'red' ? '#e66767' : '#FFEBD9'};
   border: none;
-  padding: 8px;
+  padding: 4px 6px;
   margin: 5px;
   cursor: pointer;
   width: ${(props) => (props.fullWidth ? '97%' : '')};

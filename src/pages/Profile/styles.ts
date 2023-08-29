@@ -1,5 +1,4 @@
 import { styled } from 'styled-components'
-import { Props } from '../../Components/Card'
 
 export const CardContainerI = styled.div`
   margin-left: 10%;

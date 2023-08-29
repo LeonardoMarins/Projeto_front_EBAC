@@ -14,6 +14,7 @@ const CardList = ({ comida }: Props) => {
           <Card
             color="red"
             width="big"
+            height="big"
             colorButton="#FFEBD9"
             background="#FFF"
             key={dado.id}

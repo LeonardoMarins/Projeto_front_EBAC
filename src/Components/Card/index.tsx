@@ -19,6 +19,7 @@ export type Props = {
   preco?: number
   porcao?: string
   backgroundButton?: string
+  height?: 'big' | 'small'
 }
 
 const Card = ({
@@ -43,7 +44,10 @@ const Card = ({
   }
 
   const width = color === '#FFEBD9' ? '320px' : '472px'
+  const height = color === '#FFEBD9' ? '348px' : '382px'
   const buttonText = color === '#FFEBD9' ? 'Mais Detalhes' : 'Saiba Mais'
+  const imageWidth = color === '#FFEBD9' ? '320px' : '472px'
+  const imageHeight = color === '#FFEBD9' ? '167px' : '200px'
 
   const [verifica, setVerifica] = useState(false)
   const [comida, setComida] = useState<Comidas>()
@@ -74,9 +78,13 @@ const Card = ({
     <>
       <CardContainer
         className="container"
-        style={{ background: estilos.background, width: width }}
+        style={{ background: estilos.background, width: width, height: height }}
       >
-        <img src={capa} alt="" />
+        <img
+          src={capa}
+          alt=""
+          style={{ width: imageWidth, height: imageHeight }}
+        />
         <ContainerText>
           <h3 style={{ color: estilos.color }}>{titulo}</h3>
           <p style={{ color: estilos.color }}>
