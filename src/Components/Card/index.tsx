@@ -7,17 +7,17 @@ import { Comidas } from '../../pages/Home'
 
 export type Props = {
   id: number
-  capa?: string
-  titulo?: string
+  capa: string
+  titulo: string
   background?: string
   color?: string
   colorButton?: string
   width?: 'big' | 'small'
   avaliacao?: number
-  tipo?: string
-  imagem?: string
-  preco?: number
-  porcao?: string
+  tipo: string
+  imagem: string
+  preco: number
+  porcao: string
   backgroundButton?: string
   height?: 'big' | 'small'
 }
@@ -109,6 +109,8 @@ const Card = ({
           <>
             {ids && (
               <Modal
+                id={ids}
+                foto={capa}
                 isVisible={verifica}
                 nome={titulo}
                 descricao={tipo}

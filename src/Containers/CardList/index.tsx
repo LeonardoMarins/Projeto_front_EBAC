@@ -12,6 +12,8 @@ const CardList = ({ comida }: Props) => {
       <Container className="container">
         {comida.map((dado) => (
           <Card
+            preco={1}
+            porcao="1"
             color="red"
             width="big"
             height="big"

@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
 import HeaderProfile from '../../Components/HeaderProfile'
 import Footer from '../../Components/Footer'
-import CardProfile from '../../Components/CardProfile'
+import CardProfile from '../../Containers/CardProfile'
 import { GlobalStyle } from '../../styles'
 import { Comidas } from '../Home'
 import { CardContainerI } from './styles'
+import Cart from '../../Components/Cart'
 
 const Profile = () => {
   const [restaurantData, setRestaurantData] = useState<Comidas>()
@@ -24,6 +25,7 @@ const Profile = () => {
     <>
       <GlobalStyle />
       <HeaderProfile />
+      <Cart />
       <CardContainerI>
         <CardProfile restaurant={restaurantData} />
       </CardContainerI>

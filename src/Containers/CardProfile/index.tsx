@@ -3,6 +3,7 @@ import Card from '../../Components/Card'
 import { Container } from './styles'
 import { Comidas } from '../../pages/Home'
 import { useParams } from 'react-router-dom'
+import Cart from '../../Components/Cart'
 
 type Props = {
   restaurant: Comidas
@@ -24,25 +25,27 @@ const CardProfile = ({ restaurant }: Props) => {
   }
 
   return (
-    <Container className="container">
-      {restaurantData.cardapio?.map((item) => (
-        <Card
-          color="#FFEBD9"
-          width="small"
-          height="small"
-          colorButton="#E66767"
-          background="#E66767"
-          key={item.id}
-          id={item.id}
-          imagem={item.foto}
-          titulo={item.nome}
-          capa={item.foto}
-          tipo={item.descricao}
-          preco={item.preco}
-          porcao={item.porcao}
-        />
-      ))}
-    </Container>
+    <>
+      <Container className="container">
+        {restaurantData.cardapio?.map((item) => (
+          <Card
+            color="#FFEBD9"
+            width="small"
+            height="small"
+            colorButton="#E66767"
+            background="#E66767"
+            key={item.id}
+            id={item.id}
+            imagem={item.foto}
+            titulo={item.nome}
+            capa={item.foto}
+            tipo={item.descricao}
+            preco={item.preco}
+            porcao={item.porcao}
+          />
+        ))}
+      </Container>
+    </>
   )
 }
 

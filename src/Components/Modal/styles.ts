@@ -8,6 +8,10 @@ export const ModalContainer = styled.div`
   width: 400px;
   height: 400px;
 
+  &.is-visible {
+    display: none;
+  }
+
   img {
     width: 36px;
     height: 36px;
