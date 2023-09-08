@@ -3,7 +3,6 @@ import Card from '../../Components/Card'
 import { Container } from './styles'
 import { Comidas } from '../../pages/Home'
 import { useParams } from 'react-router-dom'
-import Cart from '../../Components/Cart'
 
 type Props = {
   restaurant: Comidas

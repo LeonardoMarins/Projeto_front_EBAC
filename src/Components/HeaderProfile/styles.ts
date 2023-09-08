@@ -58,7 +58,7 @@ export const ContainerBanner = styled.div`
 
   img {
     width: 100vw;
-    height: 70vh;
+    height: 280px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -76,7 +76,7 @@ export const BannerOverlay = styled.div`
 
 export const TextContainer = styled.div`
   position: absolute;
-  top: 10%; /* Ajuste verticalmente conforme necessário */
+  top: 4%; /* Ajuste verticalmente conforme necessário */
   left: 5%; /* Ajuste horizontalmente conforme necessário */
   color: #ffffff;
   font-size: 2vw; /* Usando vw para o tamanho da fonte */
@@ -98,7 +98,7 @@ export const TextContainer = styled.div`
 
 export const Subtitle = styled.p`
   position: absolute;
-  top: 160px;
+  top: 80px;
   left: 70px;
   color: #fff;
   font-family: Roboto;

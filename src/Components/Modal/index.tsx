@@ -1,8 +1,7 @@
 import { useDispatch } from 'react-redux'
 import { ModalContainer } from './styles'
 import { add, open } from '../../store/reducers/cart'
-import { CardapioItem, Comidas } from '../../pages/Home'
-import { useEffect, useState } from 'react'
+import { CardapioItem } from '../../pages/Home'
 
 export type Props = {
   isVisible: boolean

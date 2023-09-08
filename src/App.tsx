@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Profile from './pages/Profile'
 import { Provider } from 'react-redux'
 import { store } from './store/store'
+import { GlobalStyle } from './styles'
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ function App() {
   return (
     <>
       <Provider store={store}>
+        <GlobalStyle />
         <RouterProvider router={router} />
       </Provider>
     </>

@@ -2,9 +2,6 @@ import { Aside, Container, ContainerCart, Overlay } from './styles'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootReducer } from '../../store/store'
 import { close } from '../../store/reducers/cart'
-import { useEffect, useState } from 'react'
-import { Comidas } from '../../pages/Home'
-import { useParams } from 'react-router-dom'
 
 const Cart = () => {
   const { isOpen, adicionar } = useSelector((state: RootReducer) => state.cart)
