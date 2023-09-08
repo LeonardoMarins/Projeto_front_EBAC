@@ -3,10 +3,9 @@ import { styled } from 'styled-components'
 export const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 1024px;
-  width: 708px;
   grid-gap: 32px;
   margin: 0 auto;
+  margin-top: 16px;
   justify-items: center; /* Centraliza os itens horizontalmente */
   align-items: center;
 
