@@ -30,7 +30,7 @@ const Cart = () => {
             <ContainerCart key={item.id}>
               <img src={item.foto} alt="" />
               <h2>{item.nome}</h2>
-              <p>{item.preco}</p>
+              <p>R${item.preco}</p>
               <img
                 className="logo_item"
                 onClick={() => dispatch(remove(item.id))}
@@ -39,7 +39,9 @@ const Cart = () => {
               />
             </ContainerCart>
           ))}
-          <p>Valor Total - R${valor}</p>
+          <p style={{ color: '#ffebd9', marginLeft: 20 }}>
+            Valor Total : <span style={{ marginLeft: 180 }}>R${valor}</span>
+          </p>
           <Button fullWidth>
             <Links style={{ color: '#e66767' }} to={'/'}>
               Continuar com a entrega
