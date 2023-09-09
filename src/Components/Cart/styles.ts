@@ -13,7 +13,7 @@ export const ContainerCart = styled.div`
 
   p {
     position: absolute;
-    top: 48px;
+    top: 64px;
     left: 100px;
   }
 
@@ -36,6 +36,15 @@ export const Aside = styled.aside`
   img {
     height: 80px;
     width: 80px;
+  }
+
+  .logo_item {
+    position: absolute;
+    object-fit: cover;
+    height: 16px;
+    width: 16px;
+    bottom: 5px;
+    right: 0;
   }
 `
 

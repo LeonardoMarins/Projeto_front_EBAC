@@ -5,13 +5,13 @@ import { CardapioItem } from '../../pages/Home'
 // Define a type for the slice state
 interface CounterState {
   isOpen: boolean
-  adicionar: CardapioItem[]
+  cardapio: CardapioItem[]
 }
 
 // Define the initial state using that type
 const initialState: CounterState = {
   isOpen: false,
-  adicionar: []
+  cardapio: []
 }
 
 export const counterSlice = createSlice({
@@ -19,7 +19,12 @@ export const counterSlice = createSlice({
   initialState,
   reducers: {
     add: (state, action: PayloadAction<CardapioItem>) => {
-      state.adicionar.push(action.payload)
+      state.cardapio.push(action.payload)
+    },
+    remove: (state, action: PayloadAction<number>) => {
+      state.cardapio = state.cardapio.filter(
+        (item) => item.id != action.payload
+      )
     },
     open: (state) => {
       state.isOpen = true
@@ -30,6 +35,6 @@ export const counterSlice = createSlice({
   }
 })
 
-export const { open, close, add } = counterSlice.actions
+export const { open, close, add, remove } = counterSlice.actions
 
 export default counterSlice.reducer

@@ -39,7 +39,7 @@ export const ImagemLogo = styled(Link)`
 
   img {
     padding: 0;
-    margin-left: 20px; /* Ajuste o valor conforme necessário */
+    margin-left: 68px; /* Ajuste o valor conforme necessário */
   }
 `
 
