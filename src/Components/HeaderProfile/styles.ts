@@ -98,11 +98,11 @@ export const TextContainer = styled.div`
 
 export const Subtitle = styled.p`
   position: absolute;
-  top: 80px;
+  top: 50px;
   left: 70px;
   color: #fff;
   font-family: Roboto;
-  font-size: 1.2em;
+  font-size: 1em;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
