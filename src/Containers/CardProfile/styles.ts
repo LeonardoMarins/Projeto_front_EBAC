@@ -1,26 +1,32 @@
 import { styled } from 'styled-components'
 
 export const Container = styled.div`
+  max-width: 1224px;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 auto;
-  margin-top: 16px;
-  justify-items: center; /* Centraliza os itens horizontalmente */
-  align-items: center;
+  grid-gap: 48px;
+  margin-top: 42px;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
 
-  @media (max-width: 1220px) {
+  @media (max-width: 1244px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (max-width: 798px) {
+  @media (max-width: 989px) {
     grid-template-columns: 1fr;
   }
-  .containerProfile {
-    max-width: 320px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 1500px) {
+    margin-left: 24%;
   }
 
   img {
     max-width: 100%;
-    width: 320px;
   }
 `

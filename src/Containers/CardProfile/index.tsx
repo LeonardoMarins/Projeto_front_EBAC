@@ -25,9 +25,10 @@ const CardProfile = ({ restaurant }: Props) => {
 
   return (
     <>
-      {restaurantData.cardapio?.map((item, index) => (
-        <Container key={index}>
+      <Container>
+        {restaurantData.cardapio?.map((item) => (
           <Card
+            key={item.id}
             color="#FFEBD9"
             width="small"
             height="small"
@@ -41,8 +42,8 @@ const CardProfile = ({ restaurant }: Props) => {
             preco={item.preco}
             porcao={item.porcao}
           />
-        </Container>
-      ))}
+        ))}
+      </Container>
     </>
   )
 }

@@ -10,14 +10,10 @@ export const Container = styled.div`
   margin-top: 42px;
   justify-content: center;
   align-items: center;
-  padding-right: 280px;
-  padding-left: 280px;
-  transition: width 0.3s ease;
+  margin: 0 auto;
 
-  @media (max-width: 1220px) {
+  @media (max-width: 1024px) {
     grid-template-columns: 1fr;
-    justify-content: 0;
-    align-items: 0;
     padding-left: 220px;
     padding-right: 220px;
   }

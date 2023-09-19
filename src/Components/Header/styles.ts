@@ -13,7 +13,7 @@ export const Container = styled.div`
 `
 
 export const ImagemLogo = styled(Link)`
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   position: absolute;
   padding-right: 20px;
 `

@@ -17,9 +17,9 @@ export const CardContainer = styled.div<
     | 'cardapio'
   >
 >`
-  width: ${(props) => (props.width === 'big' ? 472 + 'px' : 320 + 'px')};
+  width: ${(props) => (props.width === 'big' ? '472px' : '320px')};
   border: 1px solid #e66767;
-  height: ${(props) => (props.height === 'big' ? 382 + 'px' : 348 + 'px')};
+  height: ${(props) => (props.height === 'big' ? '382px' : '348px')};
   .paragrafo {
     margin-left: 0.6em;
     margin-top: 0.6em;
@@ -40,7 +40,7 @@ export const CardContainer = styled.div<
 
   img {
     width: ${(props) => (props.width === 'big' ? '472px' : '320px')};
-    height: ${(props) => (props.width === 'big' ? '200px' : '167px')};
+    height: ${(props) => (props.height === 'big' ? '200px' : '167px')};
   }
 `
 
