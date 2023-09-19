@@ -22,7 +22,7 @@ export const CardContainer = styled.div<
   height: ${(props) => (props.height === 'big' ? '382px' : '348px')};
   .paragrafo {
     margin-left: 0.6em;
-    margin-top: 0.6em;
+    margin-bottom: 0.6em;
     white-space: wrap;
     overflow: hidden;
     text-overflow: ellipsis;
